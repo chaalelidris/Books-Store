@@ -7,7 +7,7 @@ name = "pypi"
 django = "~=3.1.0"
 psycopg2-binary = "*"
 django-crispy-forms = "*"
-crispy-tailwind = "*"
+django-allauth = "==0.43.0"
 
 [dev-packages]
 
