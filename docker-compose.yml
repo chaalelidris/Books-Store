@@ -9,6 +9,10 @@ services:
       - 8000:8000
     depends_on:
       - db
+    environment:
+      - "DJANGO_SECRET_KEY=*pgc!$2b1==xelmle+1s$$u_akh()wco!y(ac2l(-@camc=-2_n"
+      - "DJANGO_DEBUG=True"
+
   db:
     image: postgres:11
     volumes:

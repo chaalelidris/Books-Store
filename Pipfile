@@ -5,9 +5,10 @@ name = "pypi"
 
 [packages]
 django = "~=3.1.0"
-psycopg2-binary = "*"
 django-crispy-forms = "*"
 django-allauth = "==0.43.0"
+psycopg2-binary = "==2.9.5"
+environs = {version = "==8.0.0", extras = ["django"]}
 
 [dev-packages]
 
