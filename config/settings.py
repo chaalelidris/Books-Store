@@ -144,9 +144,10 @@ STATICFILES_FINDERS = [
 ]
 
 
+MEDIA_URL = '/media/' # new
+MEDIA_ROOT = str(BASE_DIR.joinpath('media')) # new
+
 AUTH_USER_MODEL = 'accounts.CustomUser'  # new
-
-
 
 # django-crispy-forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'  # new
