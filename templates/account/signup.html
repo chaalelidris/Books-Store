@@ -13,6 +13,8 @@
         {% csrf_token %}
         {{ form|crispy }}
         <button class="btn btn-success" type="submit">Sign Up</button>
+        <a class="" style="display: block;" href="{% url 'account_login'%}" type="submit">Already have an account !</a>
+        
     </form>
 
     <hr data-content="OR" class="hr-text">
@@ -21,6 +23,7 @@
             src="https://img.icons8.com/color/16/000000/google-logo.png">
         Signup with Google
     </a>
+   
 </div>
 
 {% endblock content %}

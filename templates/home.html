@@ -7,13 +7,17 @@
 
 {% block content %}
 
+<div class="container" style="display: flex; align-items: center; justify-content: space-between;">
     <h1>Homepage</h1>
-    <img class="bookcover" src="{% static 'images/book.png' %}">
 
     {% if user.is_authenticated %}
-        Hi {{ user.email }}!
+    <span>Hi <strong>{{ user.email }}</strong> !</span>
     {% else %}
-        <p>You are not logged in</p>      
+    <p>You are not logged in</p>
     {% endif %}
+    <form class="form-inline mt-2 mt-md-0" action="{% url 'search_results' %}" method="get">
+        <input name="q" class="form-control mr-sm-2" type="text" placeholder="Search for books" aria-label="Search">
+    </form>
+</div>
 
 {% endblock content %}

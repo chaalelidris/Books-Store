@@ -163,7 +163,7 @@ ACCOUNT_LOGOUT_REDIRECT = 'home' # new
 LOGIN_REDIRECT_URL = 'home'
 SITE_ID = 1  # new
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # new
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # new
 #ACCOUNT_EMAIL_VERIFICATION = 'none'
 #ACCOUNT_SESSION_REMEMBER = True # new
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False # new
