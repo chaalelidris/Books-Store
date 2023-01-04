@@ -4,12 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "~=3.1.0"
+django = "~=4.0.0"
 django-crispy-forms = "*"
 django-allauth = "==0.43.0"
 psycopg2-binary = "==2.9.5"
 environs = {version = "==8.0.0", extras = ["django"]}
 pillow = "==9.3.0"
+django-debug-toolbar = "==2.2"
 
 [dev-packages]
 
